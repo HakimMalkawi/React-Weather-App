@@ -27,8 +27,8 @@ select {
 label {
     display: block;
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 0;
+    left: 0;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     border: 2px solid var(--teal);
