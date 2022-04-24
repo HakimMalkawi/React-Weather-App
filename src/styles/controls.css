@@ -30,6 +30,7 @@ label {
     top: 2px;
     left: 2px;
     border-radius: 8px;
+    -webkit-border-radius: 8px;
     border: none;
     outline: 2px solid var(--teal);
     width: 20rem;
@@ -58,6 +59,7 @@ label.open::after { content: "▼"; }
     padding: 1rem 2rem 1.25rem 2rem;
     border: none;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
     background: var(--salmon);
     color: var(--dark);
     font-weight: bold;  
