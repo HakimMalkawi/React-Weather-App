@@ -23,10 +23,9 @@
     grid-gap: 4rem;
     padding: 10rem 5rem 10rem 5rem;
     width: 70rem;
-    border: none;
     border-radius: 30px;
     -webkit-border-radius: 30px;
-    outline: solid var(--salmon) 4px;
+    border: solid var(--salmon) 4px;
     background: var(--dark);    }
 
 .error-container {
@@ -63,10 +62,10 @@
     border: none;
     border-radius: 10px;    
     -webkit-border-radius: 10px;
-    transition: .15s ease-in-out color, .15s ease-in-out background, .15s ease-in-out outline;  }
+    transition: .15s ease-in-out color, .15s ease-in-out background, .15s ease-in-out border;  }
 
 .error-button:focus,
 .error-button:hover {
     color: var(--teal);
     background: var(--dark);
-    outline: 2px solid var(--teal); }
+    border: 2px solid var(--teal); }

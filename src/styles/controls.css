@@ -31,8 +31,7 @@ label {
     left: 2px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
-    border: none;
-    outline: 2px solid var(--teal);
+    border: 2px solid var(--teal);
     width: 20rem;
     padding: 1rem 1.5rem 1rem 1.5rem;   }
 
@@ -64,12 +63,12 @@ label.open::after { content: "▼"; }
     color: var(--dark);
     font-weight: bold;  
     box-shadow: 0px 15px 20px -10px var(--darker);
-    transition: .15s ease-in-out color, .15s ease-in-out background, .15s ease-in-out outline;}
+    transition: .15s ease-in-out color, .15s ease-in-out background, .15s ease-in-out border;}
 
 .controls-button:hover,
 .controls-button:focus {
     background: var(--dark);
     color: var(--teal);
-    outline: 3px solid var(--teal); } 
+    border: 3px solid var(--teal); } 
 
 .controls-button:active { box-shadow: inset 2px 2px 5px 3px var(--darker); }
