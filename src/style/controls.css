@@ -1,0 +1,71 @@
+.controls-container {
+    grid-area: controls;
+    display: grid;
+    grid-template: auto / repeat(2, 1fr);
+    grid-template-areas: "country city" "search search";
+    grid-gap: 2rem;
+    justify-self: center; }
+ 
+.controls-container * {
+    width: 28rem;
+    overflow: hidden;
+    color: var(--light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    cursor: pointer; }
+
+select {
+    position: relative;
+    top: -50px;
+    left: 0;
+    opacity: 0;
+    padding: 1.2rem;
+    background: var(--dark);    }
+
+label {
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 8px;
+    border: none;
+    outline: 2px solid var(--teal);
+    width: 20rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;   }
+
+label::after {
+    content: "▲";
+    position: absolute;
+    right: 1rem;
+    top: 1rem; }
+
+label.open::after { content: "▼"; }
+
+.controls-country-selector,
+.controls-city-selector {
+    width: 28.5rem;
+    height: 5.5rem; }
+    
+.controls-country-selector { grid-area: country; }
+.controls-city-selector { grid-area: city; }
+
+.controls-button {
+    width: 100%;
+    grid-area: search;
+    padding: 1rem 2rem 1.25rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--salmon);
+    color: var(--dark);
+    font-weight: bold;  
+    box-shadow: 0px 15px 20px -10px var(--darker);
+    transition: .15s ease-in-out color, .15s ease-in-out background, .15s ease-in-out outline;}
+
+.controls-button:hover,
+.controls-button:focus {
+    background: var(--dark);
+    color: var(--teal);
+    outline: 3px solid var(--teal); } 
+
+.controls-button:active { box-shadow: inset 2px 2px 5px 3px var(--darker); }

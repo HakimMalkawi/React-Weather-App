@@ -1,0 +1,43 @@
+.view-container { grid-area: view; }
+
+.view-content {
+    display: grid;
+    grid-template: repeat(4, min-content) / repeat(2, auto);
+    grid-template-areas:
+        "location location"
+        "temp temp"
+        "feel feel"
+        "image description"   ;   
+    justify-items: center;  
+    font-size: 3.75rem; }
+
+.view-location {
+    grid-area: location;
+    font-size: 6rem;
+    text-align: center;
+    color: var(--salmon);   }
+
+.view-temp {
+    grid-area: temp;
+    font-size: 8rem;    }
+
+.cold { color: var(--teal) }
+.hot { color: var(--orange); }
+
+.view-feel {
+    grid-area: feel;
+    font-weight: 400;
+    margin-bottom: 2rem;    }
+
+.view-image {
+    grid-area: image;
+    object-fit: contain;
+    height: 10rem;
+    margin: -3.5rem -.5rem -3.5rem -1.5rem;
+    justify-self: end;  }
+
+.view-decription {
+    grid-area: description;
+    justify-self: start;
+    margin-top: -1.6rem;
+    font-size: 1.1em;   }

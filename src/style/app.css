@@ -1,0 +1,18 @@
+:root {
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --darker: #1f1c1c;
+    --dark: #2b3746;
+    --light: #f1f1f1;
+    --teal: #0ee1ad;
+    --salmon: #efa385;
+    --orange: #d28236;
+    --ruby: #a10940;    }
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--light);    }
