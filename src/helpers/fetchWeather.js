@@ -17,7 +17,7 @@ export const fetchWeatherFromCurrentLocation = (handleError, handleState, otherL
 
 export const fetchCoordinatesFromOtherLocation = async (handleError, handleState, country, city) => {
     try {   const response = 
-            await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=fc319bd1edba92633b7b866a438a05f0&units=metric`)
+            await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=fc319bd1edba92633b7b866a438a05f0&units=metric`)
             if(!response.ok) throw Error(response)
 
             const data = await response.json()
