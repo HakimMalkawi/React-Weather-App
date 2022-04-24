@@ -3,7 +3,7 @@ import { fetchCoordinatesFromOtherLocation } from "../helpers/fetchWeather"
 import { nanoid } from "nanoid"
 import countryData from "../data/countries.json"
 import cityData from "../data/cities.json"
-import "../style/controls.css"
+import "../styles/controls.css"
 
 const Controls = props => {
     const [otherCountry, setOtherCountry] = useState(
@@ -28,8 +28,8 @@ const Controls = props => {
                         {cityData[otherCountry ? otherCountry.name : countryData[0].name].map(city => <option key={nanoid()} value={city}>{city}</option>)}
                     </select>
                 </div>
-                <button className="controls-button" 
-                        onClick={()=>
-                        fetchCoordinatesFromOtherLocation(props.handleError, props.handleState, otherCountry.code, otherCountry.city)}>Search</button>  
+                <button className="controls-button" onClick={()=> {
+                        props.display(null)
+                        fetchCoordinatesFromOtherLocation(props.handleError, props.handleState, otherCountry.code, otherCountry.city)}}>Search</button>  
                 </aside>    </> }
 export default Controls

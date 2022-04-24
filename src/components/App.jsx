@@ -1,5 +1,5 @@
 import Overlay from "./Overlay"
-import "../style/app.css"
+import "../styles/app.css"
 
 const App = () => <><Overlay /></>
 export default App

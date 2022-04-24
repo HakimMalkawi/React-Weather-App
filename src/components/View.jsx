@@ -1,5 +1,5 @@
 import countries from "../data/countries.json"
-import "../style/view.css"
+import "../styles/view.css"
 
 const View = props => {
     const {country, city, temp, feel, icon, description} = props.weather

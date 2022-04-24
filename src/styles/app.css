@@ -1,0 +1,28 @@
+:root {
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --darker: #1f1c1c;
+    --dark: #2b3746;
+    --light: #f1f1f1;
+    --teal: #0ee1ad;
+    --salmon: #efa385;
+    --orange: #d28236;
+    --ruby: #a10940;    }
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--light);    }
+
+
+@media (max-width: 800px) { :root { font-size: 8px; } }
+@media (max-width: 650px) { :root { font-size: 7px; } }
+@media (max-width: 550px) { :root { font-size: 6px; } }
+@media (max-width: 450px) { :root { font-size: 5px; } }
+@media (max-width: 400px) { :root { font-size: 4px; } }
+@media (max-width: 300px) { :root { font-size: 3px; } }
+@media (max-width: 250px) { :root { font-size: 2px; } }
+@media (max-width: 200px) { :root { font-size: 1px; } }

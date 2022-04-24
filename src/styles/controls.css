@@ -4,6 +4,7 @@
     grid-template: auto / repeat(2, 1fr);
     grid-template-areas: "country city" "search search";
     grid-gap: 2rem;
+    position: relative;
     justify-self: center; }
  
 .controls-container * {
@@ -16,8 +17,8 @@
     cursor: pointer; }
 
 select {
-    position: relative;
-    top: -50px;
+    position: absolute;
+    top: 0;
     left: 0;
     opacity: 0;
     padding: 1.2rem;
@@ -25,7 +26,7 @@ select {
 
 label {
     display: block;
-    position: relative;
+    position: absolute;
     top: 2px;
     left: 2px;
     border-radius: 8px;
@@ -44,7 +45,8 @@ label.open::after { content: "▼"; }
 
 .controls-country-selector,
 .controls-city-selector {
-    width: 28.5rem;
+    position: relative;
+    width: 29rem;
     height: 5.5rem; }
     
 .controls-country-selector { grid-area: country; }

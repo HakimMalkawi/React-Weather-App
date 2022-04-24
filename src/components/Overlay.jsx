@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
 import { fetchWeatherFromCurrentLocation } from "../helpers/fetchWeather"
+import PreLoader from "./PreLoader"
 import View from "./View"
 import Controls from "./Controls"
-import "../style/overlay.css"
+import "../styles/overlay.css"
 
 const Overlay = () => {
     const [weatherData, setWeatherData] = useState(null)
@@ -13,8 +14,9 @@ const Overlay = () => {
 
     return  <>  <div className={error ? "main-container error" : "main-container"}>
                 <div className="overlay-container">
+                    { !weatherData && <PreLoader /> }
                     { weatherData && <View weather={weatherData} /> }
-                    <Controls handleError={setError} handleState={setOtherLocation} />
+                    <Controls handleError={setError} handleState={setOtherLocation} display={setWeatherData}/>
                     { error && 
                     <div className="error-container">
                         <h1 className="error-title">{error}</h1>
