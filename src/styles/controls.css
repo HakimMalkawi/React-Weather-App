@@ -47,7 +47,7 @@ label.open::after { content: "▼"; }
 .controls-city-selector {
     position: relative;
     width: 29rem;
-    height: 5.5rem; }
+    height: 6rem; }
     
 .controls-country-selector { grid-area: country; }
 .controls-city-selector { grid-area: city; }
